@@ -13,6 +13,7 @@
 		C1819D6924F40CC700D88559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1819D6724F40CC700D88559 /* Main.storyboard */; };
 		C1819D6B24F40CC900D88559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1819D6A24F40CC900D88559 /* Assets.xcassets */; };
 		C1819D6E24F40CC900D88559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1819D6C24F40CC900D88559 /* LaunchScreen.storyboard */; };
+		C1A64BED24F556BB004B7B27 /* switch.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1A64BEC24F556BB004B7B27 /* switch.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		C1819D6A24F40CC900D88559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1819D6D24F40CC900D88559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1819D6F24F40CC900D88559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A64BEC24F556BB004B7B27 /* switch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = switch.wav; path = ../../../../Downloads/Resource/Sound/switch.wav; sourceTree = "<group>"; };
+		C1A64BEF24F55838004B7B27 /* switch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = switch.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		C1819D6024F40CC700D88559 /* flashlight */ = {
 			isa = PBXGroup;
 			children = (
+				C1A64BEC24F556BB004B7B27 /* switch.wav */,
+				C1A64BEE24F55777004B7B27 /* sound */,
 				C1819D6124F40CC700D88559 /* AppDelegate.swift */,
 				C1819D6324F40CC700D88559 /* SceneDelegate.swift */,
 				C1819D6524F40CC700D88559 /* ViewController.swift */,
@@ -65,6 +70,14 @@
 				C1819D6F24F40CC900D88559 /* Info.plist */,
 			);
 			path = flashlight;
+			sourceTree = "<group>";
+		};
+		C1A64BEE24F55777004B7B27 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				C1A64BEF24F55838004B7B27 /* switch.wav */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A64BED24F556BB004B7B27 /* switch.wav in Resources */,
 				C1819D6E24F40CC900D88559 /* LaunchScreen.storyboard in Resources */,
 				C1819D6B24F40CC900D88559 /* Assets.xcassets in Resources */,
 				C1819D6924F40CC700D88559 /* Main.storyboard in Resources */,
