@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="flashlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offBG" translatesAutoresizingMaskIntoConstraints="NO" id="H11-6R-x9C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TZ-Hg-MDZ">
+                                <rect key="frame" x="192" y="468" width="30" height="70"/>
+                                <state key="normal" image="offSwitch"/>
+                                <connections>
+                                    <action selector="switchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPz-E8-ebp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H11-6R-x9C" secondAttribute="trailing" id="1MZ-4D-vPp"/>
+                            <constraint firstItem="H11-6R-x9C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WIf-PS-5b6"/>
+                            <constraint firstItem="H11-6R-x9C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cNq-OF-Cwe"/>
+                            <constraint firstItem="8TZ-Hg-MDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fOO-q9-NBd"/>
+                            <constraint firstItem="8TZ-Hg-MDZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="55" id="iI0-A3-0Ws"/>
+                            <constraint firstAttribute="bottom" secondItem="H11-6R-x9C" secondAttribute="bottom" id="qEF-ee-Ufc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flashImageView" destination="H11-6R-x9C" id="OfA-Mt-fiZ"/>
+                        <outlet property="switchButton" destination="8TZ-Hg-MDZ" id="CUP-vn-d8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="offBG" width="375" height="667"/>
+        <image name="offSwitch" width="30" height="70"/>
+    </resources>
+</document>
